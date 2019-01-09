@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9472EC4721E64FD4003E0DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC4621E64FD4003E0DB9 /* AppDelegate.swift */; };
-		9472EC4921E64FD4003E0DB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC4821E64FD4003E0DB9 /* ViewController.swift */; };
 		9472EC4C21E64FD4003E0DB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9472EC4A21E64FD4003E0DB9 /* Main.storyboard */; };
 		9472EC4E21E64FD5003E0DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9472EC4D21E64FD5003E0DB9 /* Assets.xcassets */; };
 		9472EC5121E64FD5003E0DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9472EC4F21E64FD5003E0DB9 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		9472EC4321E64FD4003E0DB9 /* ONETRAK_TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ONETRAK_TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9472EC4621E64FD4003E0DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9472EC4821E64FD4003E0DB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9472EC4B21E64FD4003E0DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9472EC4D21E64FD5003E0DB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9472EC5021E64FD5003E0DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,69 @@
 		9472EC4521E64FD4003E0DB9 /* ONETRAK_TEST */ = {
 			isa = PBXGroup;
 			children = (
-				9472EC4621E64FD4003E0DB9 /* AppDelegate.swift */,
-				9472EC4821E64FD4003E0DB9 /* ViewController.swift */,
-				9472EC4A21E64FD4003E0DB9 /* Main.storyboard */,
-				9472EC4D21E64FD5003E0DB9 /* Assets.xcassets */,
-				9472EC4F21E64FD5003E0DB9 /* LaunchScreen.storyboard */,
-				9472EC5221E64FD5003E0DB9 /* Info.plist */,
+				9472EC5C21E6507F003E0DB9 /* App */,
+				9472EC5A21E65034003E0DB9 /* Environment */,
+				9472EC5921E65026003E0DB9 /* Core */,
+				9472EC5D21E65099003E0DB9 /* Flow */,
+				9472EC5B21E65065003E0DB9 /* Resources */,
 			);
 			path = ONETRAK_TEST;
+			sourceTree = "<group>";
+		};
+		9472EC5821E64FFA003E0DB9 /* BussinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BussinessLogic;
+			sourceTree = "<group>";
+		};
+		9472EC5921E65026003E0DB9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9472EC5A21E65034003E0DB9 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				9472EC5221E64FD5003E0DB9 /* Info.plist */,
+				9472EC4F21E64FD5003E0DB9 /* LaunchScreen.storyboard */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		9472EC5B21E65065003E0DB9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9472EC4D21E64FD5003E0DB9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9472EC5C21E6507F003E0DB9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9472EC5E21E6511E003E0DB9 /* Entities */,
+				9472EC5821E64FFA003E0DB9 /* BussinessLogic */,
+				9472EC4621E64FD4003E0DB9 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9472EC5D21E65099003E0DB9 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				9472EC4A21E64FD4003E0DB9 /* Main.storyboard */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		9472EC5E21E6511E003E0DB9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9472EC4921E64FD4003E0DB9 /* ViewController.swift in Sources */,
 				9472EC4721E64FD4003E0DB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X37P9Q6XJN;
-				INFOPLIST_FILE = ONETRAK_TEST/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ONETRAK_TEST/Environment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X37P9Q6XJN;
-				INFOPLIST_FILE = ONETRAK_TEST/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ONETRAK_TEST/Environment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
