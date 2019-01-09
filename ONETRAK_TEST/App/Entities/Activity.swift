@@ -7,7 +7,7 @@
 //
 
 /// Модель данных активности пользователя
-struct Activity: Codable {
+struct Steps: Codable {
     
     let aerobic: Int
     let date: Int
