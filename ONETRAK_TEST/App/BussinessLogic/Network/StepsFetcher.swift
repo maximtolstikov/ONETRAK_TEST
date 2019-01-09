@@ -8,19 +8,20 @@
 
 import Foundation
 
+/// Парсер даных в модель
 protocol Fetcher {
-    func fetch(response: @escaping (Steps?) -> Void)
+    func fetch(response: @escaping ([Steps]?) -> Void)
 }
 
 /// Модуль мапинга данных в коллекцию Шагов
 struct StepsFetcher: Fetcher {
     let networking: Networking
     
-    init(networking: Networking) {
+    init(_ networking: Networking) {
         self.networking = networking
     }
     
-    func fetch(response: @escaping (Steps?) -> Void) {
+    func fetch(response: @escaping ([Steps]?) -> Void) {
         networking.request(from: Activities.steps) { (data, error) in
             
             if let error = error {
@@ -28,9 +29,9 @@ struct StepsFetcher: Fetcher {
                 return
             }
             
-            let decoded = self.decodeJSON(type: Steps.self, from: data)
-            if let decoded = decoded {
-                print("Data is fetched")
+            guard let decoded = self.decodeJSON(type: [Steps].self, from: data) else {
+                assertionFailure()
+                return
             }
             response(decoded)
         }

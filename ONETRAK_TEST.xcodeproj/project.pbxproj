@@ -15,6 +15,8 @@
 		9472EC6721E65BDC003E0DB9 /* HTTPNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6621E65BDC003E0DB9 /* HTTPNetworking.swift */; };
 		9472EC6A21E65E51003E0DB9 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6921E65E51003E0DB9 /* Endpoint.swift */; };
 		9472EC6C21E6643F003E0DB9 /* StepsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6B21E6643F003E0DB9 /* StepsFetcher.swift */; };
+		9472EC6E21E6663D003E0DB9 /* ActivityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6D21E6663D003E0DB9 /* ActivityScreen.swift */; };
+		9472EC7221E66A08003E0DB9 /* ActivityScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC7121E66A08003E0DB9 /* ActivityScreenFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		9472EC6621E65BDC003E0DB9 /* HTTPNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPNetworking.swift; sourceTree = "<group>"; };
 		9472EC6921E65E51003E0DB9 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		9472EC6B21E6643F003E0DB9 /* StepsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsFetcher.swift; sourceTree = "<group>"; };
+		9472EC6D21E6663D003E0DB9 /* ActivityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityScreen.swift; sourceTree = "<group>"; };
+		9472EC7121E66A08003E0DB9 /* ActivityScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityScreenFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		9472EC5C21E6507F003E0DB9 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				9472EC6F21E66686003E0DB9 /* Assembly */,
 				9472EC5821E64FFA003E0DB9 /* BussinessLogic */,
 				9472EC5E21E6511E003E0DB9 /* Entities */,
 				9472EC4621E64FD4003E0DB9 /* AppDelegate.swift */,
@@ -116,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				9472EC4A21E64FD4003E0DB9 /* Main.storyboard */,
+				9472EC6D21E6663D003E0DB9 /* ActivityScreen.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -143,6 +149,14 @@
 				9472EC6B21E6643F003E0DB9 /* StepsFetcher.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		9472EC6F21E66686003E0DB9 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9472EC7121E66A08003E0DB9 /* ActivityScreenFactory.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +232,8 @@
 			files = (
 				9472EC6521E65503003E0DB9 /* Activity.swift in Sources */,
 				9472EC6721E65BDC003E0DB9 /* HTTPNetworking.swift in Sources */,
+				9472EC6E21E6663D003E0DB9 /* ActivityScreen.swift in Sources */,
+				9472EC7221E66A08003E0DB9 /* ActivityScreenFactory.swift in Sources */,
 				9472EC6A21E65E51003E0DB9 /* Endpoint.swift in Sources */,
 				9472EC6C21E6643F003E0DB9 /* StepsFetcher.swift in Sources */,
 				9472EC4721E64FD4003E0DB9 /* AppDelegate.swift in Sources */,
