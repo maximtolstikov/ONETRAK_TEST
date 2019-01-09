@@ -12,6 +12,8 @@
 		9472EC4E21E64FD5003E0DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9472EC4D21E64FD5003E0DB9 /* Assets.xcassets */; };
 		9472EC5121E64FD5003E0DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9472EC4F21E64FD5003E0DB9 /* LaunchScreen.storyboard */; };
 		9472EC6521E65503003E0DB9 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6421E65503003E0DB9 /* Activity.swift */; };
+		9472EC6721E65BDC003E0DB9 /* HTTPNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6621E65BDC003E0DB9 /* HTTPNetworking.swift */; };
+		9472EC6A21E65E51003E0DB9 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6921E65E51003E0DB9 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9472EC5021E64FD5003E0DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9472EC5221E64FD5003E0DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9472EC6421E65503003E0DB9 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		9472EC6621E65BDC003E0DB9 /* HTTPNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPNetworking.swift; sourceTree = "<group>"; };
+		9472EC6921E65E51003E0DB9 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		9472EC5821E64FFA003E0DB9 /* BussinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				9472EC6821E65E3D003E0DB9 /* Network */,
 			);
 			path = BussinessLogic;
 			sourceTree = "<group>";
@@ -124,6 +129,15 @@
 		9472EC5F21E6540A003E0DB9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9472EC6621E65BDC003E0DB9 /* HTTPNetworking.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9472EC6821E65E3D003E0DB9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9472EC6921E65E51003E0DB9 /* Endpoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -200,6 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9472EC6521E65503003E0DB9 /* Activity.swift in Sources */,
+				9472EC6721E65BDC003E0DB9 /* HTTPNetworking.swift in Sources */,
+				9472EC6A21E65E51003E0DB9 /* Endpoint.swift in Sources */,
 				9472EC4721E64FD4003E0DB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
