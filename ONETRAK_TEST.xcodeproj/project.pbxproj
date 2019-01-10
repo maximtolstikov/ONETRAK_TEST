@@ -11,12 +11,13 @@
 		9472EC4C21E64FD4003E0DB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9472EC4A21E64FD4003E0DB9 /* Main.storyboard */; };
 		9472EC4E21E64FD5003E0DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9472EC4D21E64FD5003E0DB9 /* Assets.xcassets */; };
 		9472EC5121E64FD5003E0DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9472EC4F21E64FD5003E0DB9 /* LaunchScreen.storyboard */; };
-		9472EC6521E65503003E0DB9 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6421E65503003E0DB9 /* Activity.swift */; };
+		9472EC6521E65503003E0DB9 /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6421E65503003E0DB9 /* Steps.swift */; };
 		9472EC6721E65BDC003E0DB9 /* HTTPNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6621E65BDC003E0DB9 /* HTTPNetworking.swift */; };
 		9472EC6A21E65E51003E0DB9 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6921E65E51003E0DB9 /* Endpoint.swift */; };
 		9472EC6C21E6643F003E0DB9 /* StepsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6B21E6643F003E0DB9 /* StepsFetcher.swift */; };
 		9472EC6E21E6663D003E0DB9 /* ActivityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC6D21E6663D003E0DB9 /* ActivityScreen.swift */; };
 		9472EC7221E66A08003E0DB9 /* ActivityScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC7121E66A08003E0DB9 /* ActivityScreenFactory.swift */; };
+		9472EC7421E67C2F003E0DB9 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472EC7321E67C2F003E0DB9 /* ActivityCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +27,13 @@
 		9472EC4D21E64FD5003E0DB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9472EC5021E64FD5003E0DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9472EC5221E64FD5003E0DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9472EC6421E65503003E0DB9 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		9472EC6421E65503003E0DB9 /* Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
 		9472EC6621E65BDC003E0DB9 /* HTTPNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPNetworking.swift; sourceTree = "<group>"; };
 		9472EC6921E65E51003E0DB9 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		9472EC6B21E6643F003E0DB9 /* StepsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsFetcher.swift; sourceTree = "<group>"; };
 		9472EC6D21E6663D003E0DB9 /* ActivityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityScreen.swift; sourceTree = "<group>"; };
 		9472EC7121E66A08003E0DB9 /* ActivityScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityScreenFactory.swift; sourceTree = "<group>"; };
+		9472EC7321E67C2F003E0DB9 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				9472EC4A21E64FD4003E0DB9 /* Main.storyboard */,
 				9472EC6D21E6663D003E0DB9 /* ActivityScreen.swift */,
+				9472EC7321E67C2F003E0DB9 /* ActivityCell.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -129,7 +132,7 @@
 		9472EC5E21E6511E003E0DB9 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				9472EC6421E65503003E0DB9 /* Activity.swift */,
+				9472EC6421E65503003E0DB9 /* Steps.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -230,8 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9472EC6521E65503003E0DB9 /* Activity.swift in Sources */,
+				9472EC6521E65503003E0DB9 /* Steps.swift in Sources */,
 				9472EC6721E65BDC003E0DB9 /* HTTPNetworking.swift in Sources */,
+				9472EC7421E67C2F003E0DB9 /* ActivityCell.swift in Sources */,
 				9472EC6E21E6663D003E0DB9 /* ActivityScreen.swift in Sources */,
 				9472EC7221E66A08003E0DB9 /* ActivityScreenFactory.swift in Sources */,
 				9472EC6A21E65E51003E0DB9 /* Endpoint.swift in Sources */,

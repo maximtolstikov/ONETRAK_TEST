@@ -13,7 +13,7 @@ protocol Fetcher {
     func fetch(response: @escaping ([Steps]?) -> Void)
 }
 
-/// Модуль мапинга данных в коллекцию Шагов
+/// Модуль мапинга данных для коллекцию Шагов
 struct StepsFetcher: Fetcher {
     let networking: Networking
     
@@ -22,7 +22,7 @@ struct StepsFetcher: Fetcher {
     }
     
     func fetch(response: @escaping ([Steps]?) -> Void) {
-        networking.request(from: Activities.steps) { (data, error) in
+        networking.request(from: Activities.steps) { (data, error) in            
             
             if let error = error {
                 print("Error received requesting Steps: \(error.localizedDescription)")
@@ -33,7 +33,9 @@ struct StepsFetcher: Fetcher {
                 assertionFailure()
                 return
             }
-            response(decoded)
+            DispatchQueue.main.async {
+                response(decoded)
+            }
         }
     }
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-// сборщик вынес в фабрику на случай если понадобится для iPad например
+// Cборщик вынес в фабрику на случай если понадобится для iPad например.
 protocol ViewControllerFactory {
     func controller() -> UIViewController
 }
